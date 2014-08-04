@@ -105,7 +105,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -143,7 +143,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_date',
-    'label' => 'Publication Date',
+    'label' => 'Source Publication Date',
     'required' => 1,
     'settings' => array(
       'custom_add_another' => '',
@@ -169,7 +169,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 5,
+      'weight' => 0,
     ),
     'workbench_access_field' => 0,
   );
@@ -269,7 +269,11 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'bundle' => 'offsite_school_story',
     'custom_add_another' => '',
     'custom_remove' => '',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'written',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -305,8 +309,8 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
       'settings' => array(
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
-      'type' => 'options_select',
-      'weight' => 0,
+      'type' => 'options_buttons',
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -364,7 +368,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 1,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -485,7 +489,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 9,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -567,7 +571,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_publisher',
     'label' => 'Source Publication',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -621,7 +625,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 2,
     ),
     'workbench_access_field' => 0,
   );
@@ -670,7 +674,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 8,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -685,9 +689,9 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
   t('Keywords');
   t('Link to article');
   t('Media Format');
-  t('Publication Date');
   t('Related Faculty');
   t('Source Publication');
+  t('Source Publication Date');
 
   return $field_instances;
 }

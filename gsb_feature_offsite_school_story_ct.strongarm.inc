@@ -19,10 +19,10 @@ function gsb_feature_offsite_school_story_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '14',
+          'weight' => '13',
         ),
         'title' => array(
-          'weight' => '2',
+          'weight' => '1',
         ),
         'path' => array(
           'weight' => '12',

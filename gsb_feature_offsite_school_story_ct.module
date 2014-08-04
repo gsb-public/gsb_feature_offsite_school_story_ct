@@ -5,3 +5,20 @@
  */
 
 include_once 'gsb_feature_offsite_school_story_ct.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter() for event node edit form.
+ */
+function gsb_feature_offsite_school_story_ct_form_offsite_school_story_node_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form_id != 'offsite_school_story_node_form') {
+    return;
+  }
+
+  $language = $form['language']['#value'];
+
+  $form['field_program_single']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
+    array('checked' => FALSE),
+  );
+
+}
