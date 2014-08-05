@@ -21,7 +21,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Alumni Story',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_alumni_story',
       1 => 'field_program_single',
