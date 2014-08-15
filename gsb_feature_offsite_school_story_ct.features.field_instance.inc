@@ -631,6 +631,66 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-offsite_school_story-field_search_field'
+  $field_instances['node-offsite_school_story-field_search_field'] = array(
+    'bundle' => 'offsite_school_story',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'concat_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'concat_field_blank',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_search_field',
+    'label' => 'Search field',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'selected_fields' => array(
+        'concat_field_entity_label' => 'concat_field_entity_label',
+        'field_alumni_story' => 0,
+        'field_centers_research_programs' => 'field_centers_research_programs',
+        'field_date' => 'field_date',
+        'field_editorial_summary' => 'field_editorial_summary',
+        'field_icon' => 0,
+        'field_image_key_image' => 0,
+        'field_link_single' => 0,
+        'field_program_single' => 'field_program_single',
+        'field_publisher' => 'field_publisher',
+        'field_related_faculty' => 'field_related_faculty',
+        'field_tag' => 'field_tag',
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'concat_field',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'concat_field_default',
+      'weight' => 19,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-offsite_school_story-field_tag'
   $field_instances['node-offsite_school_story-field_tag'] = array(
     'bundle' => 'offsite_school_story',
@@ -691,6 +751,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
   t('Link to article');
   t('Media Format');
   t('Related Faculty');
+  t('Search field');
   t('Source Publication');
   t('Source Publication Date');
 
