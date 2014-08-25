@@ -59,7 +59,7 @@ function gsb_feature_offsite_school_story_ct_strongarm() {
         'custom_settings' => FALSE,
       ),
       'news_listing' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'people_fpp' => array(
         'custom_settings' => FALSE,
