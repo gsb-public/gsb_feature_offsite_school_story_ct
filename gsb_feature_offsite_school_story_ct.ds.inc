@@ -175,8 +175,8 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'offsite_school_story';
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
-    'insights_label_school_news' => array(
-      'weight' => '0',
+    'media_icon' => array(
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -186,8 +186,8 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
-    'media_icon' => array(
-      'weight' => '4',
+    'insights_label_school_news' => array(
+      'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -259,6 +259,12 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'em',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
         ),
       ),
     ),
