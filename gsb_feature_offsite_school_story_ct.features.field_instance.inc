@@ -463,7 +463,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_image_key_image',
     'label' => 'Key Image',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'custom_add_another' => '',
