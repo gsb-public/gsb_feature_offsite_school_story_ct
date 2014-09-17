@@ -47,7 +47,27 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
   $field_group->bundle = 'offsite_school_story';
   $field_group->mode = 'news_listing';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array(
+    'label' => 'Title wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_link_single',
+      1 => 'media_icon',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Title wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
   $export['group_wrapper_title|node|offsite_school_story|news_listing'] = $field_group;
 
   $field_group = new stdClass();
