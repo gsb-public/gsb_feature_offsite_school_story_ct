@@ -1,7 +1,7 @@
 name = GSB Feature Offsite School Story Content Type
 core = 7.x
 package = GSB
-version = 7.x-4.03
+version = 7.x-4.04
 project = gsb_feature_offsite_school_story_ct
 dependencies[] = concat_field
 dependencies[] = ctools
@@ -20,7 +20,7 @@ dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
-datestamp = 1412174532
+datestamp = 1413236049
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
