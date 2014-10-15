@@ -807,7 +807,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 8,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -879,7 +879,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 19,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
