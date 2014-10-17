@@ -54,7 +54,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_alumni_story',
-    'label' => 'Alumni Mentioned',
+    'label' => 'Mentioned',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -622,7 +622,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_program_single',
-    'label' => 'Alumni Degree/Program',
+    'label' => 'Program',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -947,8 +947,8 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Alumni Degree/Program');
-  t('Alumni Mentioned');
+  t('Program');
+  t('Mentioned');
   t('CIRCLE Taxonomy');
   t('Dek');
   t('Key Image');
