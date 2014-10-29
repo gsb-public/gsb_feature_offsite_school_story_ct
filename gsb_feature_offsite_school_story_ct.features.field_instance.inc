@@ -582,8 +582,8 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-offsite_school_story-field_program_single'
-  $field_instances['node-offsite_school_story-field_program_single'] = array(
+  // Exported field_instance: 'node-offsite_school_story-field_program_unlimited'
+  $field_instances['node-offsite_school_story-field_program_unlimited'] = array(
     'bundle' => 'offsite_school_story',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -598,30 +598,30 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
+        'weight' => 14,
       ),
       'idea_story_related' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 0,
       ),
       'news_listing' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_program_single',
+    'field_name' => 'field_program_unlimited',
     'label' => 'Program',
     'required' => 0,
     'settings' => array(
@@ -637,7 +637,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 17,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -947,14 +947,14 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Program');
-  t('Mentioned');
   t('CIRCLE Taxonomy');
   t('Dek');
   t('Key Image');
   t('Keywords');
   t('Link to article');
   t('Media Format');
+  t('Mentioned');
+  t('Program');
   t('Related Faculty');
   t('Search field');
   t('Source Publication');

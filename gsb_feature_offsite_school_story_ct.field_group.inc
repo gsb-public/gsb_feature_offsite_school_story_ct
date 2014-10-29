@@ -24,7 +24,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
     'weight' => '8',
     'children' => array(
       0 => 'field_alumni_story',
-      1 => 'field_program_single',
+      1 => 'field_program_unlimited',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
