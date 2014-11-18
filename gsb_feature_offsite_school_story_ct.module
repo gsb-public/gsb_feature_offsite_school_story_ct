@@ -17,7 +17,7 @@ function gsb_feature_offsite_school_story_ct_form_offsite_school_story_node_form
 
   $language = $form['language']['#value'];
 
-  $form['field_program_single']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
+  $form['field_program_unlimited']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
     array('checked' => FALSE),
   );
 
