@@ -17,11 +17,15 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'offsite_school_story';
   $ds_fieldsetting->view_mode = 'alumni_featured_content';
   $ds_fieldsetting->settings = array(
-    'field_icon' => array(
+    'media_icon' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'default',
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
         ),
+        'conditions' => array(),
       ),
     ),
     'field_link_single' => array(
@@ -29,11 +33,17 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
-          'ow-el' => 'h2',
+          'ow-el' => 'div',
           'ow-cl' => '',
           'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
+          'fi' => TRUE,
+          'fi-el' => 'h2',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
         ),
       ),
     ),
@@ -42,7 +52,7 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
-          'ow-el' => 'div',
+          'ow-el' => 'em',
           'ow-cl' => '',
           'ow-def-cl' => TRUE,
           'ow-at' => '',
@@ -334,13 +344,13 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_publisher',
-        1 => 'field_icon',
+        1 => 'media_icon',
         2 => 'field_link_single',
       ),
     ),
     'fields' => array(
       'field_publisher' => 'ds_content',
-      'field_icon' => 'ds_content',
+      'media_icon' => 'ds_content',
       'field_link_single' => 'ds_content',
     ),
     'classes' => array(),

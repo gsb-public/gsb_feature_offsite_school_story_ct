@@ -387,12 +387,9 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'display' => array(
       'alumni_featured_content' => array(
         'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
-        'weight' => 1,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'default' => array(
         'label' => 'above',
