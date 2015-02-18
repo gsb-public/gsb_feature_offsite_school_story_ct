@@ -21,4 +21,22 @@ function gsb_feature_offsite_school_story_ct_form_offsite_school_story_node_form
     array('checked' => FALSE),
   );
 
+  // Perform additional validation.
+  $form['#validate'][] = 'gsb_feature_offsite_school_story_ct_form_offsite_school_story_node_form_validate';
+
+}
+
+/**
+ * Validate callback for offsite_school_story_node_form.
+ *  - Conditionally validate alumni story fields.
+ */
+function gsb_feature_offsite_school_story_ct_form_offsite_school_story_node_form_validate($form, &$form_state) {
+  $language = $form['language']['#value'];
+  $values = $form_state['values'];
+
+  // If offsite_school_story is an alumni story we need to manually validate some required fields.
+  if ($values['field_alumni_story'][$language][0]['value'] == FALSE) {
+    $form_state['complete form']['field_program_unlimited'][$language]['#value'] = array();
+    $form_state['values']['field_program_unlimited'][$language] = array();
+  }
 }
