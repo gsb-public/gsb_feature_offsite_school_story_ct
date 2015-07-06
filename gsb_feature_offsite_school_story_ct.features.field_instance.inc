@@ -190,7 +190,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'long',
+          'format_type' => 'panopoly_day',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -220,7 +220,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'long',
+          'format_type' => 'panopoly_day',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
