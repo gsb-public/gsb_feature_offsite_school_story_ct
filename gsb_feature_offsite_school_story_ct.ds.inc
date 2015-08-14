@@ -351,12 +351,6 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
-          'fi' => TRUE,
-          'fi-el' => 'h3',
-          'fi-cl' => '',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
         ),
       ),
     ),
@@ -364,6 +358,7 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'suffix' => '<span class="pipe">|</span>',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -376,6 +371,7 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
           'fi-at' => '',
           'fi-def-at' => FALSE,
           'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -680,6 +676,7 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|offsite_school_story|news_listing'] = $ds_layout;
 
