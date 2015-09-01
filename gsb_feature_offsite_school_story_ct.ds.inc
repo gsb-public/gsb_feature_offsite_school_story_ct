@@ -532,18 +532,18 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_link_single',
-        1 => 'field_date',
+        0 => 'field_date',
+        1 => 'group_wrapper_title',
         2 => 'media_icon',
-        3 => 'group_wrapper_title',
+        3 => 'field_link_single',
         4 => 'field_publisher',
       ),
     ),
     'fields' => array(
-      'field_link_single' => 'ds_content',
       'field_date' => 'ds_content',
-      'media_icon' => 'ds_content',
       'group_wrapper_title' => 'ds_content',
+      'media_icon' => 'ds_content',
+      'field_link_single' => 'ds_content',
       'field_publisher' => 'ds_content',
     ),
     'classes' => array(),
@@ -568,11 +568,11 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'field_link_single',
-        1 => 'field_date',
-        2 => 'media_icon',
-        3 => 'group_wrapper_title',
-        4 => 'field_publisher',
+        0 => 'field_date',
+        1 => 'media_icon',
+        2 => 'group_wrapper_title',
+        3 => 'field_publisher',
+        4 => 'field_link_single',
         5 => 'field_editorial_summary',
       ),
       'right' => array(
@@ -580,11 +580,11 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
-      'field_link_single' => 'left',
       'field_date' => 'left',
       'media_icon' => 'left',
       'group_wrapper_title' => 'left',
       'field_publisher' => 'left',
+      'field_link_single' => 'left',
       'field_editorial_summary' => 'left',
       'field_image_key_image' => 'right',
     ),

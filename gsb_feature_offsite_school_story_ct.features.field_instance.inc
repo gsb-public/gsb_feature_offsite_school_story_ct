@@ -681,7 +681,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'gsb_field_formatter_node_title_link',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'default' => array(
         'label' => 'above',
@@ -699,7 +699,7 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'gsb_field_formatter_node_title_link',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
