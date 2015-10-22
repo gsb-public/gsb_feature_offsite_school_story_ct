@@ -65,5 +65,6 @@ features[variable][] = menu_parent_offsite_school_story
 features[variable][] = node_options_offsite_school_story
 features[variable][] = node_preview_offsite_school_story
 features[variable][] = node_submitted_offsite_school_story
+features[variable][] = pathauto_node_offsite_school_story_pattern
 features[variable][] = workbench_access_node_type_offsite_school_story
 features[variable][] = workbench_moderation_default_state_offsite_school_story
