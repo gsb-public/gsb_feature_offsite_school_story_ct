@@ -10,6 +10,82 @@
 function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'node-offsite_school_story-field_academic_area_unlimited'.
+  $field_instances['node-offsite_school_story-field_academic_area_unlimited'] = array(
+    'bundle' => 'offsite_school_story',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'compact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 15,
+      ),
+      'expanded' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'idea_story_related' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_academic_area_unlimited',
+    'label' => 'Academic Area',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'hs_taxonomy',
+      'settings' => array(),
+      'type' => 'taxonomy_hs',
+      'weight' => 20,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-offsite_school_story-field_alumni_story'.
   $field_instances['node-offsite_school_story-field_alumni_story'] = array(
     'bundle' => 'offsite_school_story',
@@ -88,6 +164,82 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
       ),
       'type' => 'options_onoff',
       'weight' => 16,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance:
+  // 'node-offsite_school_story-field_business_insight_topic'.
+  $field_instances['node-offsite_school_story-field_business_insight_topic'] = array(
+    'bundle' => 'offsite_school_story',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'compact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 16,
+      ),
+      'expanded' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'idea_story_related' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_business_insight_topic',
+    'label' => 'Additional Topics',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'hs_taxonomy',
+      'settings' => array(),
+      'type' => 'taxonomy_hs',
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
@@ -397,21 +549,30 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_editorial_summary',
     'label' => 'Dek',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
+          'act' => 0,
           'full_html' => 'full_html',
           'gsb_html_text' => 'gsb_html_text',
           'gsb_wysiwyg_text' => 'gsb_wysiwyg_text',
+          'image_resource_caption' => 0,
+          'image_text_equivalent' => 0,
           'markdown' => 'markdown',
+          'markdown_lite_minus_resources' => 0,
+          'paragraphed_plain_text' => 0,
           'plain_text' => 'plain_text',
+          'sidebar' => 0,
           'slideshow' => 'slideshow',
         ),
         'allowed_formats_toggle' => 0,
         'default_order_toggle' => 0,
         'default_order_wrapper' => array(
           'formats' => array(
+            'act' => array(
+              'weight' => 0,
+            ),
             'full_html' => array(
               'weight' => 1,
             ),
@@ -421,11 +582,26 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
             'gsb_wysiwyg_text' => array(
               'weight' => -10,
             ),
+            'image_resource_caption' => array(
+              'weight' => 0,
+            ),
+            'image_text_equivalent' => array(
+              'weight' => 0,
+            ),
             'markdown' => array(
+              'weight' => 0,
+            ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
+            'paragraphed_plain_text' => array(
               'weight' => 0,
             ),
             'plain_text' => array(
               'weight' => 10,
+            ),
+            'sidebar' => array(
+              'weight' => 0,
             ),
             'slideshow' => array(
               'weight' => 0,
@@ -536,128 +712,6 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
       ),
       'type' => 'options_buttons',
       'weight' => 5,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-offsite_school_story-field_image_key_image'.
-  $field_instances['node-offsite_school_story-field_image_key_image'] = array(
-    'bundle' => 'offsite_school_story',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'deleted' => 0,
-    'description' => 'minimum size 1200 x 630 px',
-    'display' => array(
-      'alumni_featured_content' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 11,
-      ),
-      'compact' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 15,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'conditions' => array(),
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 2,
-      ),
-      'expanded' => array(
-        'label' => 'hidden',
-        'module' => 'image_link_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'image_link' => 'field_link_single',
-          'image_style' => '170x100',
-        ),
-        'type' => 'image_link_formatter',
-        'weight' => 4,
-      ),
-      'idea_story_related' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 19,
-      ),
-      'news_listing' => array(
-        'label' => 'hidden',
-        'module' => 'image_link_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'image_link' => 'field_link_single',
-          'image_style' => '170x100',
-        ),
-        'type' => 'image_link_formatter',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'image_link_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'image_link' => 'field_link_single',
-          'image_style' => '',
-        ),
-        'type' => 'image_link_formatter',
-        'weight' => 1,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_image_key_image',
-    'label' => 'Key Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 1,
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'filefield_paths' => array(
-        'active_updating' => 0,
-        'file_name' => array(
-          'options' => array(
-            'pathauto' => 0,
-            'transliterate' => 0,
-          ),
-          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
-        ),
-        'file_path' => array(
-          'options' => array(
-            'pathauto' => 0,
-            'transliterate' => 0,
-          ),
-          'value' => '',
-        ),
-        'replace_existing_files' => 0,
-        'retroactive_update' => 0,
-      ),
-      'filefield_paths_enabled' => 1,
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -993,88 +1047,6 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-offsite_school_story-field_related_faculty'.
-  $field_instances['node-offsite_school_story-field_related_faculty'] = array(
-    'bundle' => 'offsite_school_story',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'alumni_featured_content' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 17,
-      ),
-      'compact' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 17,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 12,
-      ),
-      'expanded' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 16,
-      ),
-      'idea_story_related' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 16,
-      ),
-      'news_listing' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 21,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_related_faculty',
-    'label' => 'Related Faculty',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'field_collection_embed',
-      'weight' => 7,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-offsite_school_story-field_search_field'.
   $field_instances['node-offsite_school_story-field_search_field'] = array(
     'bundle' => 'offsite_school_story',
@@ -1246,19 +1218,18 @@ function gsb_feature_offsite_school_story_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Academic Area');
+  t('Additional Topics');
   t('CIRCLE Taxonomy');
   t('Dek');
-  t('Key Image');
   t('Keywords');
   t('Link to article');
   t('Media Format');
   t('Mentioned');
   t('Program');
-  t('Related Faculty');
   t('Search field');
   t('Source Publication');
   t('Source Publication Date');
-  t('minimum size 1200 x 630 px');
 
   return $field_instances;
 }

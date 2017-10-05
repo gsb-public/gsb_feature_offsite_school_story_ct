@@ -25,7 +25,7 @@ function gsb_feature_offsite_school_story_ct_ctools_plugin_api($module = NULL, $
 function gsb_feature_offsite_school_story_ct_node_info() {
   $items = array(
     'offsite_school_story' => array(
-      'name' => t('Offsite School Story'),
+      'name' => t('Media Mention'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

@@ -8,7 +8,61 @@
  * Implements hook_field_group_info().
  */
 function gsb_feature_offsite_school_story_ct_field_group_info() {
-  $export = array();
+  $field_groups = array();
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_academic_area|node|offsite_school_story|form';
+  $field_group->group_name = 'group_academic_area';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'offsite_school_story';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Academic Area',
+    'weight' => '21',
+    'children' => array(
+      0 => 'field_academic_area_unlimited',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-academic-area field-group-tab',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_academic_area|node|offsite_school_story|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_additional_topics|node|offsite_school_story|form';
+  $field_group->group_name = 'group_additional_topics';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'offsite_school_story';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_taxonomy';
+  $field_group->data = array(
+    'label' => 'Additional Topics',
+    'weight' => '22',
+    'children' => array(
+      0 => 'field_business_insight_topic',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $field_groups['group_additional_topics|node|offsite_school_story|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -36,7 +90,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_alumni_story|node|offsite_school_story|form'] = $field_group;
+  $field_groups['group_alumni_story|node|offsite_school_story|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -49,7 +103,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Centers',
-    'weight' => '10',
+    'weight' => '23',
     'children' => array(
       0 => 'field_centers_research_programs',
     ),
@@ -63,7 +117,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_centers|node|offsite_school_story|form'] = $field_group;
+  $field_groups['group_centers|node|offsite_school_story|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -76,7 +130,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
     'label' => 'Tags',
-    'weight' => '11',
+    'weight' => '24',
     'children' => array(
       0 => 'field_tag',
     ),
@@ -90,7 +144,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_tags|node|offsite_school_story|form'] = $field_group;
+  $field_groups['group_tags|node|offsite_school_story|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -107,6 +161,8 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
     'children' => array(
       0 => 'group_centers',
       1 => 'group_tags',
+      2 => 'group_academic_area',
+      3 => 'group_additional_topics',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
@@ -116,7 +172,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_taxonomy|node|offsite_school_story|form'] = $field_group;
+  $field_groups['group_taxonomy|node|offsite_school_story|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -149,7 +205,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|offsite_school_story|compact'] = $field_group;
+  $field_groups['group_wrapper_title|node|offsite_school_story|compact'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -182,7 +238,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|offsite_school_story|expanded'] = $field_group;
+  $field_groups['group_wrapper_title|node|offsite_school_story|expanded'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -215,7 +271,7 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|offsite_school_story|news_listing'] = $field_group;
+  $field_groups['group_wrapper_title|node|offsite_school_story|news_listing'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -248,7 +304,17 @@ function gsb_feature_offsite_school_story_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|offsite_school_story|teaser'] = $field_group;
+  $field_groups['group_wrapper_title|node|offsite_school_story|teaser'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Academic Area');
+  t('Additional Topics');
+  t('Alumni/Past Participant Mention');
+  t('Centers');
+  t('Tagging');
+  t('Tags');
+  t('Title wrapper');
+
+  return $field_groups;
 }
