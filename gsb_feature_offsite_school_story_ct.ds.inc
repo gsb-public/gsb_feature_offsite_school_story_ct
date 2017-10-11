@@ -204,7 +204,6 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => '<span class="pipe">|</span>',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -358,7 +357,6 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => '<span class="pipe">|</span>',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
@@ -534,20 +532,18 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_publisher',
-        1 => 'group_wrapper_title',
+        1 => 'field_date',
         2 => 'media_icon',
-        3 => 'field_date',
+        3 => 'group_wrapper_title',
         4 => 'field_link_single',
-        5 => 'field_editorial_summary',
       ),
     ),
     'fields' => array(
       'field_publisher' => 'ds_content',
-      'group_wrapper_title' => 'ds_content',
-      'media_icon' => 'ds_content',
       'field_date' => 'ds_content',
+      'media_icon' => 'ds_content',
+      'group_wrapper_title' => 'ds_content',
       'field_link_single' => 'ds_content',
-      'field_editorial_summary' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -572,10 +568,10 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'field_date',
-        1 => 'media_icon',
-        2 => 'group_wrapper_title',
-        3 => 'field_publisher',
+        0 => 'field_publisher',
+        1 => 'field_date',
+        2 => 'media_icon',
+        3 => 'group_wrapper_title',
         4 => 'field_link_single',
         5 => 'field_editorial_summary',
       ),
@@ -584,10 +580,10 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
+      'field_publisher' => 'left',
       'field_date' => 'left',
       'media_icon' => 'left',
       'group_wrapper_title' => 'left',
-      'field_publisher' => 'left',
       'field_link_single' => 'left',
       'field_editorial_summary' => 'left',
       'field_image_key_image' => 'right',
@@ -650,11 +646,11 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'field_date',
-        1 => 'group_wrapper_title',
+        0 => 'field_publisher',
+        1 => 'field_date',
         2 => 'media_icon',
-        3 => 'field_link_single',
-        4 => 'field_publisher',
+        3 => 'group_wrapper_title',
+        4 => 'field_link_single',
         5 => 'field_editorial_summary',
       ),
       'right' => array(
@@ -662,11 +658,11 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
-      'field_date' => 'left',
-      'group_wrapper_title' => 'left',
-      'media_icon' => 'left',
-      'field_link_single' => 'left',
       'field_publisher' => 'left',
+      'field_date' => 'left',
+      'media_icon' => 'left',
+      'group_wrapper_title' => 'left',
+      'field_link_single' => 'left',
       'field_editorial_summary' => 'left',
       'field_image_key_image' => 'right',
     ),
@@ -696,22 +692,22 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'insights_label_school_news',
         1 => 'field_image_key_image',
-        2 => 'field_date',
-        3 => 'group_wrapper_title',
-        4 => 'media_icon',
-        5 => 'field_link_single',
-        6 => 'field_publisher',
+        2 => 'field_publisher',
+        3 => 'field_date',
+        4 => 'group_wrapper_title',
+        5 => 'media_icon',
+        6 => 'field_link_single',
         7 => 'field_editorial_summary',
       ),
     ),
     'fields' => array(
       'insights_label_school_news' => 'ds_content',
       'field_image_key_image' => 'ds_content',
+      'field_publisher' => 'ds_content',
       'field_date' => 'ds_content',
       'group_wrapper_title' => 'ds_content',
       'media_icon' => 'ds_content',
       'field_link_single' => 'ds_content',
-      'field_publisher' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
     ),
     'classes' => array(),
@@ -723,6 +719,7 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|offsite_school_story|teaser'] = $ds_layout;
 
