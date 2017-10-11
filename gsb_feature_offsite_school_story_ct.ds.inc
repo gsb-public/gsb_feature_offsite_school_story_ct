@@ -231,7 +231,7 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'idea_story_related';
   $ds_fieldsetting->settings = array(
     'media_icon' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -612,13 +612,15 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_date',
-        1 => 'media_icon',
-        2 => 'field_link_single',
-        3 => 'field_editorial_summary',
+        0 => 'field_publisher',
+        1 => 'field_date',
+        2 => 'media_icon',
+        3 => 'field_link_single',
+        4 => 'field_editorial_summary',
       ),
     ),
     'fields' => array(
+      'field_publisher' => 'ds_content',
       'field_date' => 'ds_content',
       'media_icon' => 'ds_content',
       'field_link_single' => 'ds_content',
@@ -633,6 +635,7 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|offsite_school_story|idea_story_related'] = $ds_layout;
 
