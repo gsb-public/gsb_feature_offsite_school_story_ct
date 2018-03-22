@@ -394,7 +394,7 @@ function gsb_feature_offsite_school_story_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
-    'insights_label_school_news' => array(
+    'insights_media_mention_label' => array(
       'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
@@ -693,7 +693,7 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'insights_label_school_news',
+        0 => 'insights_media_mention_label',
         1 => 'field_image_key_image',
         2 => 'field_publisher',
         3 => 'field_date',
@@ -704,7 +704,7 @@ function gsb_feature_offsite_school_story_ct_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
-      'insights_label_school_news' => 'ds_content',
+      'insights_media_mention_label' => 'ds_content',
       'field_image_key_image' => 'ds_content',
       'field_publisher' => 'ds_content',
       'field_date' => 'ds_content',
